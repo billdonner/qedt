@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88059E482B0010ED003E6699 /* qedtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E472B0010ED003E6699 /* qedtApp.swift */; };
-		88059E4A2B0010ED003E6699 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E492B0010ED003E6699 /* ContentView.swift */; };
-		88059E4C2B0010ED003E6699 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E4B2B0010ED003E6699 /* Item.swift */; };
-		88059E4E2B0010EE003E6699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88059E4D2B0010EE003E6699 /* Assets.xcassets */; };
 		88059E512B0010EE003E6699 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88059E502B0010EE003E6699 /* Preview Assets.xcassets */; };
+		88059E6C2B001130003E6699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88059E5A2B00112F003E6699 /* Assets.xcassets */; };
+		88059E712B001130003E6699 /* qeditzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E612B00112F003E6699 /* qeditzApp.swift */; };
+		88059E742B001130003E6699 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E642B00112F003E6699 /* ContentView.swift */; };
+		88059E752B001130003E6699 /* EditQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E652B00112F003E6699 /* EditQuestionView.swift */; };
+		88059E762B001130003E6699 /* qedtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E662B00112F003E6699 /* qedtApp.swift */; };
+		88059E772B001130003E6699 /* QTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E672B00112F003E6699 /* QTopic.swift */; };
+		88059E782B001130003E6699 /* EditQTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E682B001130003E6699 /* EditQTopicView.swift */; };
+		88059E792B001130003E6699 /* QChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E692B001130003E6699 /* QChallenge.swift */; };
+		88059E7A2B001130003E6699 /* QTopicListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88059E6A2B001130003E6699 /* QTopicListingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88059E442B0010ED003E6699 /* qedt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qedt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88059E472B0010ED003E6699 /* qedtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qedtApp.swift; sourceTree = "<group>"; };
-		88059E492B0010ED003E6699 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		88059E4B2B0010ED003E6699 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		88059E4D2B0010EE003E6699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88059E502B0010EE003E6699 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88059E522B0010EE003E6699 /* qedt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qedt.entitlements; sourceTree = "<group>"; };
+		88059E5A2B00112F003E6699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88059E612B00112F003E6699 /* qeditzApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = qeditzApp.swift; path = qeditz/qeditzApp.swift; sourceTree = "<group>"; };
+		88059E642B00112F003E6699 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88059E652B00112F003E6699 /* EditQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditQuestionView.swift; sourceTree = "<group>"; };
+		88059E662B00112F003E6699 /* qedtApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = qedtApp.swift; sourceTree = "<group>"; };
+		88059E672B00112F003E6699 /* QTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTopic.swift; sourceTree = "<group>"; };
+		88059E682B001130003E6699 /* EditQTopicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditQTopicView.swift; sourceTree = "<group>"; };
+		88059E692B001130003E6699 /* QChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QChallenge.swift; sourceTree = "<group>"; };
+		88059E6A2B001130003E6699 /* QTopicListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTopicListingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		88059E3B2B0010ED003E6699 = {
 			isa = PBXGroup;
 			children = (
+				88059E5A2B00112F003E6699 /* Assets.xcassets */,
 				88059E462B0010ED003E6699 /* qedt */,
 				88059E452B0010ED003E6699 /* Products */,
 			);
@@ -54,10 +65,15 @@
 		88059E462B0010ED003E6699 /* qedt */ = {
 			isa = PBXGroup;
 			children = (
-				88059E472B0010ED003E6699 /* qedtApp.swift */,
-				88059E492B0010ED003E6699 /* ContentView.swift */,
-				88059E4B2B0010ED003E6699 /* Item.swift */,
-				88059E4D2B0010EE003E6699 /* Assets.xcassets */,
+				88059E612B00112F003E6699 /* qeditzApp.swift */,
+				88059E642B00112F003E6699 /* ContentView.swift */,
+				88059E682B001130003E6699 /* EditQTopicView.swift */,
+				88059E652B00112F003E6699 /* EditQuestionView.swift */,
+				88059E692B001130003E6699 /* QChallenge.swift */,
+				88059E582B00112F003E6699 /* qeditz */,
+				88059E662B00112F003E6699 /* qedtApp.swift */,
+				88059E672B00112F003E6699 /* QTopic.swift */,
+				88059E6A2B001130003E6699 /* QTopicListingView.swift */,
 				88059E522B0010EE003E6699 /* qedt.entitlements */,
 				88059E4F2B0010EE003E6699 /* Preview Content */,
 			);
@@ -70,6 +86,13 @@
 				88059E502B0010EE003E6699 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88059E582B00112F003E6699 /* qeditz */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = qeditz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +127,7 @@
 				TargetAttributes = {
 					88059E432B0010ED003E6699 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -131,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88059E512B0010EE003E6699 /* Preview Assets.xcassets in Resources */,
-				88059E4E2B0010EE003E6699 /* Assets.xcassets in Resources */,
+				88059E6C2B001130003E6699 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88059E4A2B0010ED003E6699 /* ContentView.swift in Sources */,
-				88059E4C2B0010ED003E6699 /* Item.swift in Sources */,
-				88059E482B0010ED003E6699 /* qedtApp.swift in Sources */,
+				88059E782B001130003E6699 /* EditQTopicView.swift in Sources */,
+				88059E792B001130003E6699 /* QChallenge.swift in Sources */,
+				88059E762B001130003E6699 /* qedtApp.swift in Sources */,
+				88059E712B001130003E6699 /* qeditzApp.swift in Sources */,
+				88059E742B001130003E6699 /* ContentView.swift in Sources */,
+				88059E772B001130003E6699 /* QTopic.swift in Sources */,
+				88059E752B001130003E6699 /* EditQuestionView.swift in Sources */,
+				88059E7A2B001130003E6699 /* QTopicListingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = qedt/qedt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -293,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.billdonner.qedt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -302,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = qedt/qedt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

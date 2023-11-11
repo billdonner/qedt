@@ -1,59 +1,60 @@
 //
 //  ContentView.swift
-//  qedt
+//  qedito
 //
-//  Created by bill donner on 11/11/23.
+//  Created by bill donner on 11/5/23.
 //
 
 import SwiftUI
 import SwiftData
-
+ 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+  //@State private var selectedQuestionID = ""
+  @State private var selectedQuestion:QChallenge = QChallenge.mock
+  @Environment(\.modelContext) var modelContext
+  @State private var path = [QTopic]()
+  @State private var sortOrder = SortDescriptor(\QTopic.topicName)
+  @State private var searchText = ""
+  var body: some View {
+    
+    NavigationSplitView {
+      QTopicListingView(sort: sortOrder, searchString: searchText)
+        .navigationDestination(for: QTopic.self){ EditQTopicView(topic: $0,selectedQuestion:$selectedQuestion)
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+        .searchable(text: $searchText)
+        .toolbar {
+          Button("Add Topic", systemImage: "plus", action: addQTopic)
+          
+          Menu("Sort", systemImage: "arrow.up.arrow.down") {
+            Picker("Sort", selection: $sortOrder) {
+              Text("Name")
+                .tag(SortDescriptor(\QTopic.topicName))
+              
+              Text("Category")
+                .tag(SortDescriptor(\QTopic.category, order: .reverse))
+              
+              Text("Date")
+                .tag(SortDescriptor(\QTopic.date))
             }
+            .pickerStyle(.inline)
+          }
         }
+    } content: {
+      Text("Primary View")
+    } detail: {
+      withAnimation {
+        EditQuestionView(cha: selectedQuestion)
+      }
     }
+  }
+  func addQTopic() {
+      let destination = QTopic()
+      modelContext.insert(destination)
+      path = [destination]
+  }
 }
+
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

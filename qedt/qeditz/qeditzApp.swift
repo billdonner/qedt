@@ -11,7 +11,7 @@ import SwiftData
 
 
 @main
-struct qedtApp: App {
+struct qeditzApp: App {
   @Environment(\.colorScheme) var colorScheme
   var sharedModelContainer: ModelContainer = {
       let schema = Schema([
